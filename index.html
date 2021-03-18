@@ -7,33 +7,45 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/space-effect.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
 </head>
 <body>
     <div class="container">
-        <div class="col-8 offset-2">
-            <div class="col-12 text-center text-white mb-3">
+            
+        <div class="row fixed-top p-2 mt-3 mb-3">
+            <div class="col-12 text-center text-white">
                 <img src="assets/star-wars-logo.png" width="180" height="60"> 
                 <span class="badge badge-pill badge-light">Planets</span>
             </div>
-            <table class="table table-bordered table-dark table-hover" id="planets-table-js">
-                <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Terrain</th>
-                    <th scope="col">Climate</th>
-                    <th scope="col">Population</th>
-                </tr>
-                </thead>
-                <tbody id="planets-table-tbody-js">
-                <tr>
-                    <th class="text-center" colspan="5">Nenhum planeta a vista...</th>
-                </tr>
-                </tbody>
-            </table>
         </div>
+
+        <div class="row p-5 mt-3 mb-3">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Simple Planets Manager</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 offset-2">
+                                <div id="sub-container-js">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="text-center">
+                            <span>Hansel Donizete - 2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
     <script src="lib/three.min.js"></script>
+    
     <script>
         let scene, camera, renderer, stars, starGeo;
 
